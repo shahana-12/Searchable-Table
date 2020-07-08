@@ -1,0 +1,52 @@
+.text{
+	width: 80%;
+	margin:2% auto;
+	padding:20px;
+
+}
+.text input{
+	width: 50%;
+	padding:10px 10px;
+	float: left;
+}
+.text h3{
+	overflow: hidden;
+	padding-left: 10%;
+}
+.tbl table{
+	width: 80%;
+	margin:4% auto;
+	text-align: center;
+}
+.tst{
+	font-size: 25px;
+}
+@media (max-width: 950px) and (min-width: 750px){
+	.text{
+	width: 100%;
+	margin:2% 0;
+	padding:20px;
+
+	}
+}
+@media (max-width: 749px) and (min-width: 500px){
+	.text{
+	width: 100%;
+	padding:20px;
+
+	}
+	.text h3{
+	overflow: hidden;
+	padding-left: 10%;
+	font-size: 22px;
+	}
+	.tbl table{
+	width: 100%;
+	text-align: center;
+	font-size: 10px;
+	}
+	.tbl table thead{
+		font-size: 11px;
+
+	}
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Searchable Table</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#search").on("keyup", function(){
+				var value=$(this).val().toLowerCase();
+				$("table tbody tr").filter(function(){
+					$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+				})
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="text bg-dark">
+		<input id="search" type="text" name="" placeholder="Search Here.....">
+		<h3 class="text-info">Searchable Table</h3>
+	</div>
+		<div id="srch" class="tbl table-responsive">
+			<table class="table table-hover table-dark">
+			   <thead id="thd" class="sticky-top">
+			   		<tr><th class="tst" colspan="9">Student Information</th></tr>
+				    <tr>
+				      <th scope="col">Student ID</th>
+				      <th scope="col">Name</th>
+				      <th scope="col">Roll Number</th>
+				      <th scope="col">Registration Number</th>
+				      <th scope="col">Department</th>
+				      <th scope="col">Mobile Number</th>
+				      <th scope="col">Address</th>
+				    </tr>
+			  	</thead>
+		  		<tbody>
+				    <tr>
+				      <th scope="row">1</th>
+				      <td>Shahana Akter</td>
+				      <td>941441</td>
+				      <td>558662</td>
+				      <td>Computer</td>
+				      <td>01500000000</td>
+				      <td>Kazir Dawri, Chittagong</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">2</th>
+				      <td>Nipa Akter</td>
+				      <td>941415</td>
+				      <td>558652</td>
+				      <td>Computer</td>
+				      <td>01800120000</td>
+				      <td>Golpahar, Chittagong</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">3</th>
+				      <td>Tanzila Akter</td>
+				      <td>941421</td>
+				      <td>558632</td>
+				      <td>Civil</td>
+				      <td>01500041514</td>
+				      <td>G.E.C., Chittagong</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">4</th>
+				      <td>Shabiha Ahmed</td>
+				      <td>941471</td>
+				      <td>558612</td>
+				      <td>Civil</td>
+				      <td>01500042015</td>
+				      <td>Kazir Dawri, Chittagong</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">5</th>
+				      <td>Jannatul Mawa</td>
+				      <td>941451</td>
+				      <td>558682</td>
+				      <td>Electrical</td>
+				      <td>01725048362</td>
+				      <td>Muradpur, Chittagong</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">6</th>
+				      <td>Tahera Begum</td>
+				      <td>941461</td>
+				      <td>558602</td>
+				      <td>Mechanical</td>
+				      <td>01725048362</td>
+				      <td>Lalkhan Bazer, Chittagong</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">7</th>
+				      <td>Fatema Akter</td>
+				      <td>941411</td>
+				      <td>558611</td>
+				      <td>Power</td>
+				      <td>01725836201</td>
+				      <td>Lalkhan Bazer, Chittagong</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">8</th>
+				      <td>Pritima Chowdhury</td>
+				      <td>941466</td>
+				      <td>558600</td>
+				      <td>Mechanical</td>
+				      <td>01725048362</td>
+				      <td>2no Gate, Chittagong</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">9</th>
+				      <td>Dilruba Hossain Arifa</td>
+				      <td>941426</td>
+				      <td>558632</td>
+				      <td>Electrical</td>
+				      <td>01725136254</td>
+				      <td>Muradpur, Chittagong</td>
+				    </tr>
+		    		<tr>
+		      			<th scope="row">10</th>
+		      			<td>Runa Akter</td>
+		      			<td>941372</td>
+		      			<td>558648</td>
+		      			<td>Environment</td>
+		      			<td>01725048362</td>
+		      			<td>Nasirabad, Chittagong</td>
+		    		</tr>
+		 		</tbody>
+			</table>
+		</div>
+</body>
+</html>
